@@ -9,7 +9,7 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogActions from "@mui/material/DialogActions";
 import Button from "@mui/material/Button";
 
-type LabelType = {
+export type LabelType = {
   label: string;
   color?:
     | "inherit"
@@ -21,7 +21,7 @@ type LabelType = {
     | "warning";
 };
 
-interface LabelsType {
+export interface LabelsType {
   yes?: LabelType;
   no?: LabelType;
 }
@@ -35,6 +35,15 @@ export interface ConfirmDialogProps {
   labels?: LabelsType;
 }
 
+/**
+ * Basic confirm dialog where it displays a title, a question message, and two
+ * buttons(Yes and No).
+ *
+ * The button's labels text and colors are customizable.
+ *
+ * @param props
+ * @constructor
+ */
 export const ConfirmDialog: React.FC<ConfirmDialogProps> = (props) => {
   const { onClose, message, onConfirm, show, title, labels } = props;
   return (

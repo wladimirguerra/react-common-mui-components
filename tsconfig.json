@@ -40,5 +40,10 @@
     "coverage",
     "./src/**/*.test.ts",
     "./src/**/*.test.tsx"
-  ]
+  ],
+  "typedocOptions": {
+    "entryPoints": "src/",
+    "out": "docs",
+    "exclude": "**/*+(index|.spec|.e2e|.test).ts"
+  }
 }

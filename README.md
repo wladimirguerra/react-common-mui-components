@@ -1,13 +1,13 @@
 # react-common-mui-components
 
-> React MaterialUI common components
+> React MaterialUI's common components
 
 [![NPM](https://img.shields.io/npm/v/react-common-mui-components.svg)](https://www.npmjs.com/package/react-common-mui-components) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-prettier-blueviolet)](https://prettier.io)
 
 ## Install
 
-This library requires [MaterialUI v5](https://mui.com). Please follow
-its installation gide to proper setup.
+This library requires [MaterialUI v5](https://mui.com) and
+[React.JS v17](https://reactjs.org).
 
 To install this library run:
 
@@ -19,31 +19,18 @@ Or
 ```bash
 yarn add react-common-mui-components
 ```
-## Usage
-
-```tsx
-import React, { Component } from 'react'
-
-import { MyComponent } from 'react-common-mui-components'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
-```
 
 ## Components
 
 ### `ConfirmDialog`
 
-This is a basic confirm dialog that show up a
+A basic confirm dialog that show up a
 MaterialUI Dialog with a title, message, and
 two buttons to confirm or cancel an action.
 
 #### `useConfirmDialog`
 
-This hook provides a way to show the dialog with an imperative call.
+A hook that provides a way to show the dialog with an imperative call.
 
 ```tsx
 import { useConfirmDialog } from "react-common-mui-components"

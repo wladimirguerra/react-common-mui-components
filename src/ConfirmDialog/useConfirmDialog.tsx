@@ -1,6 +1,10 @@
 import { ReactNode, useState } from "react";
 import ConfirmDialog, { ConfirmDialogProps } from "./ConfirmDialog";
 
+/**
+ * This hook handle the {@link ConfirmDialog}'s show state and provides an
+ * imperative method to display the dialog.
+ */
 export function useConfirmDialog() {
   const [dialogProps, setDialogProps] =
     useState<Omit<ConfirmDialogProps, "onClose">>();
